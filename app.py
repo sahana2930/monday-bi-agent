@@ -17,7 +17,7 @@ st.title("AI Business Intelligence Agent (Live monday.com)")
 # MONDAY API CONFIGURATION
 # ==========================================================
 
-API_TOKEN = "eyJhbGciOiJIUzI1NiJ9.eyJ0aWQiOjYyNTYyNjI0MiwiYWFpIjoxMSwidWlkIjoxMDAyOTEzODIsImlhZCI6IjIwMjYtMDItMjVUMDg6MzY6MzEuODE0WiIsInBlciI6Im1lOndyaXRlIiwiYWN0aWQiOjMzOTYwOTY1LCJyZ24iOiJhcHNlMiJ9.HGpvyXCe_Pfqc61s6Q1YcJ1kD64J5zOxiU5AYeWpYVQ"  # Replace with your token
+API_TOKEN = "ABC"  # Replace with your token
 API_URL = "https://api.monday.com/v2"
 
 HEADERS = {
@@ -294,5 +294,6 @@ if question:
         response.append(
             "I can assist with pipeline, forecast, sector analysis, quarter performance, risk exposure, or leadership summary."
         )
+
 
     st.markdown("\n".join(response))
