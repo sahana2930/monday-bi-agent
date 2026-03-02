@@ -17,7 +17,7 @@ st.title("AI Business Intelligence Agent (Live monday.com)")
 # MONDAY API CONFIGURATION
 # ==========================================================
 
-API_TOKEN = "ABC"  # Replace with your token
+API_TOKEN = st.secrets["MONDAY_API_TOKEN"]  # Replace with your token
 API_URL = "https://api.monday.com/v2"
 
 HEADERS = {
@@ -297,3 +297,4 @@ if question:
 
 
     st.markdown("\n".join(response))
+
